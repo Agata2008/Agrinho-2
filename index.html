@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"  crossorigin="anonymous"  />
+    <link rel="stylesheet" href="style.css">
+    <title>Meu portfólio</title>
+
+</head>
+
+<body>
+
+
+    <footer class="container py-5" id="contato">
+    <h2>Entre em contato</h2>
+    <div>
+        <i class="bi bi-github"></i>
+        <a href="https://github.com/Agata2008/lembran-as.git">GitHub</a>
+    </div>
+    <p class="my-5 text-center">&copy; 2024 Meu Site. Todos os direitos reservados. Colégio Estadual Padre Claudio Morelli, estudante Ágata Ferreira da Costa, número 01, 2C.</p>
+</footer>
+
+<button class="scroll-to-top" onclick="scrollToTop()">
+    &#8593; 
+</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+    window.onscroll = function() {
+        const button = document.querySelector('.scroll-to-top');
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            button.style.display = "flex"; 
+        } else {
+            button.style.display = "none"; 
+        }
+    };
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+
+</body>
+</html>
